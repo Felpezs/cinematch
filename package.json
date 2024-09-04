@@ -1,0 +1,23 @@
+{
+  "name": "cinematch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web:dev": "npm run dev -w @cinematch/web"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cinematch/eslint-config": "*",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

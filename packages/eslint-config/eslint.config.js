@@ -14,6 +14,6 @@ export default [
       parserOptions: {
         parser: "@typescript-eslint/parser",
       },
-    },
+    }
   },
 ];

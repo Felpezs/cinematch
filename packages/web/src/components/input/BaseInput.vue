@@ -27,7 +27,7 @@ const handleChange = (e: Event) => {
     />
     <label
       :for="id"
-      class="absolute left-3 -translate-y-1/2 bg-primary-400 px-1 capitalize text-secondary-400 transition-all ease-in-out peer-autofill:top-0 peer-autofill:text-sm peer-focus-within:top-0 peer-focus-within:text-sm peer-focus-within:text-accent"
+      class="absolute left-3 -translate-y-1/2 bg-primary-500 px-1 capitalize text-secondary-400 transition-all ease-in-out peer-autofill:top-0 peer-autofill:text-sm peer-focus-within:top-0 peer-focus-within:text-sm peer-focus-within:text-accent"
       :class="inputValue.length > 0 ? 'top-0 text-sm' : 'top-1/2'"
       >{{ placeholder }}</label
     >

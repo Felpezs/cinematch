@@ -51,6 +51,9 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      boxShadow: {
+        "input-autofill": "0 0 0 70px #FDF7FF inset",
+      },
     },
   },
   plugins: [],

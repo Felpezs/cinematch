@@ -42,7 +42,7 @@ export default {
     colors: {
       "secondary-500": "#1F1926",
       "secondary-400": "#4C4751",
-      "primary-400": "#FDF7FF",
+      "primary-500": "#FDF7FF",
       "primary-700": "#B4AFB5",
       transparent: "rgba(0,0,0,0)",
       accent: "#4816D9",

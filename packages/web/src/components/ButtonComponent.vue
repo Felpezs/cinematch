@@ -17,7 +17,7 @@ defineProps<{ variant: keyof typeof variants }>();
     :class="variants[variant]"
   >
     <div
-      class="items-center justify-center gap-2 bg-opacity-0 py-3 transition-colors hover:bg-opacity-10"
+      class="items-center justify-center gap-2 bg-opacity-0 py-3 capitalize transition-colors hover:bg-opacity-10"
       :class="[
         $slots.icon ? 'flex pl-4 pr-6' : 'px-6',
         variant == 'secondary' ? 'bg-primary-700' : 'bg-primary-500',

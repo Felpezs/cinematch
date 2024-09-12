@@ -1,21 +1,30 @@
 <script setup lang="ts">
 const variants = {
   primary: "bg-accent",
-  secondary: "bg-accent bg-opacity-10 border-2 border-accent",
+  secondary: "border-2 border-accent",
 };
 
+defineOptions({
+  inheritAttrs: false,
+});
 defineProps<{ variant: keyof typeof variants }>();
 </script>
 
 <template>
   <button
-    class="text-primary-500 rounded-full py-3 text-base"
-    :class="[
-      variants[variant],
-      $slots.icon ? 'flex items-center justify-center gap-2 pl-4 pr-6' : 'px-6',
-    ]"
+    v-bind="$attrs"
+    class="overflow-hidden rounded-full text-base text-primary-500"
+    :class="variants[variant]"
   >
-    <slot v-if="$slots.icon" name="icon"></slot>
-    <slot></slot>
+    <div
+      class="items-center justify-center gap-2 bg-opacity-0 py-3 transition-colors hover:bg-opacity-10"
+      :class="[
+        $slots.icon ? 'flex pl-4 pr-6' : 'px-6',
+        variant == 'secondary' ? 'bg-primary-700' : 'bg-primary-500',
+      ]"
+    >
+      <slot v-if="$slots.icon" name="icon"></slot>
+      <slot></slot>
+    </div>
   </button>
 </template>

@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "files": ["*.{jsx,tsx}"],
+      "options": { "plugins": ["prettier-plugin-tailwindcss"] }
+    }
+  ]
+}
